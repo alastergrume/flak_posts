@@ -31,7 +31,7 @@ def load_user(user_id):
     print("load_user")
     return UserLogin().fromDB(user_id, dbase)
 
-
+#kjk.ljk.
 def connect_db():
     """Функция для связи с БД"""
     conn = sqlite3.connect(app.config['DATABASE'])
