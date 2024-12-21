@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    image: webapp:tag
+    ports:
+      - "5000:5000"
+    volumes:
+      - ..:/app
+    environment:
+      - FLASK_ENV=development
